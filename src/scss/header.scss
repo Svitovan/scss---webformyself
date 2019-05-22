@@ -1,0 +1,25 @@
+@import 'mixins';
+@import 'variables';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    color: $font-color;
+    
+    
+
+    &__title {
+        font-size: 62px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &__subtitle {
+        font-size: 32px;
+        font-style: italic;
+        font-weight: normal;
+    }
+
+}

@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+.authorization {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 0 0 110px;
+    
+    
+
+    &__link {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 25px 0px ;
+    }
+}

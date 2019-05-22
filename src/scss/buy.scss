@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
+.buy {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+    }
+    &__title {
+        font-style: 25px;
+        opacity: .8;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        margin-bottom: 50px;
+        opacity: .6;
+    }
+    &__input-wrapper {
+
+    }
+    &__www {
+
+    }
+    &__help {
+
+    }
+    &__input-block {
+
+    }
+    &__input {
+
+    }
+    &__domain {
+
+    }
+    &__select{
+
+    }
+}
