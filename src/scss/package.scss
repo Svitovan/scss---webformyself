@@ -1,0 +1,45 @@
+@import 'mixins';
+@import 'variables';
+
+.package {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+
+    &__img {
+
+    }
+
+    &__tiles {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -300px;
+        margin-bottom: 80px;
+        height: 600px;
+    }
+
+    &__tile {
+
+        & .tile__img {}
+        & .tile__title {}
+        & .tile__list {}
+        & .tile__item {
+            & .item__key {}
+            & .value {}
+        }
+
+        & .tile__footer{
+
+        }
+
+        & .tile__cost {
+            & .cost__price {}
+            & .cost__date {}
+        }
+
+        &__plan {
+
+        }
+    }
+}

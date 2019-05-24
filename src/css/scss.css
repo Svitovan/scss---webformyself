@@ -22,7 +22,94 @@
 
 .buy__subtitle {
   margin-bottom: 50px;
-  opacity: .6; }
+  opacity: .6;
+  font-weight: normal; }
+
+.buy__input-wrapper {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto 50px;
+  padding: 5px;
+  border: 1px solid #d9d9d9; }
+
+.buy__www {
+  align-self: center;
+  color: #d9d9d9;
+  flex-basis: 100px;
+  text-align: center; }
+
+.buy__input-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9; }
+
+.buy__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px; }
+
+.buy__domain {
+  margin-right: 50px;
+  color: #d9d9d9; }
+
+.buy__select {
+  align-self: center;
+  text-align: center;
+  flex-basis: 100px;
+  color: #d9d9d9;
+  cursor: pointer;
+  position: relative; }
+  .buy__select:hover .select__dropdown {
+    opacity: 1; }
+  .buy__select .select__dropdown {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    top: 38px;
+    right: 20px;
+    opacity: 0;
+    background-color: black;
+    transition: .5s all; }
+  .buy__select .select__item {
+    text-transform: uppercase;
+    padding: 7px; }
+
+.buy__grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 900px;
+  margin: 0 auto; }
+
+.grid-cell {
+  padding: 30px 50px;
+  text-align: center;
+  position: relative;
+  color: #d9d9d9; }
+
+.grid-cell::after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  height: 10px;
+  width: 10px;
+  right: -5px;
+  bottom: -5px;
+  background-color: white;
+  z-index: 10; }
+
+.grid-border-right {
+  border-right: 1px solid #d9d9d9; }
+
+.grid-border-bottom {
+  border-bottom: 1px solid #d9d9d9; }
 
 .header {
   display: flex;
@@ -73,7 +160,7 @@ a {
   background-color: #000; }
 
 .bg-buy-section {
-  background-color: orange; }
+  background-color: rgba(255, 255, 255, 0); }
 
 .nav {
   display: flex;
@@ -110,3 +197,15 @@ a {
     opacity: 0;
     transition: .5s opacity;
     background-color: #fff; }
+
+.package {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff; }
+  .package__tiles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -300px;
+    margin-bottom: 80px;
+    height: 600px; }
